@@ -7,10 +7,12 @@
 Bikeshare data brakedown
 
 ### Description
-Describe what your project is about and what it does
+The objective is to crate a interactive system to filter out bikeshare data based on user inputs.
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+whasington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
