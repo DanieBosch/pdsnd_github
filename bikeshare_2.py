@@ -256,11 +256,12 @@ def look_at_data(df):
     pd.set_option('display.max_columns',200)
     look_at_data = input('Would you like to see the first 5 rows of the dataset? Enter y or n: ').lower()
     start_loc = 0
-    while (look_at_data in ['yes','y']):
-        print(df.iloc[start_loc:start_loc + 5])
-        start_loc += 5
-        look_at_data = input('Do you wish to see more? Enter y to see the next 5 rows: ').lower()
-        continue
+    while True:
+    display_data = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
+    if display_data.lower() != 'yes':
+        break
+    print(tabulate(df_default.iloc[np.arange(0+i,5+i)], headers ="keys"))
+    i+=5
         
     
     print('-'*40)
