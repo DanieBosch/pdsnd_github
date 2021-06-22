@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
+
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -252,6 +253,7 @@ def user_stats(df):
 
 
 def look_at_data(df):
+    pd.set_option('display.max_columns',200)
     look_at_data = input('Would you like to see the first 5 rows of the dataset? Enter y or n: ').lower()
     start_loc = 0
     while (look_at_data in ['yes','y']):
